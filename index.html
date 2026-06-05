@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coding142857BlockGame-MainPage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            display: block;
+        }
+        
+        script,
+        head,
+        span#fileLink {
+            display: none;
+        }
+        
+        div#top {
+            text-align: center;
+            border-bottom: 10px black double;
+        }
+        
+        div#top>*,
+        div#top>*>* {
+            display: inline-block;
+        }
+        
+        div#main {
+            padding: 10px;
+        }
+        
+        div#main>* {
+            text-align: center;
+            padding: 10px;
+            border: 10px black double;
+            width: calc(25% - 40px);
+            display: inline-block;
+        }
+    </style>
+    <link rel="icon" href="image/icon1.png" sizes="64"></link>
+
+</head>
+<div id="top">
+    <img src="image/icon2.png" id="icon">
+    <img src="image/title.png" id="title">
+</div>
+<div id="main"></div>
+
+<body>
+
+</body>
+<span id="fileLink">
+    {      
+        "new":"v1.0.0",
+        "v1.0.0":{"href":"v1_0_0", "name":"v1.0.0"},
+        "v1.0.1":{"href":"v1_0_1", "name":"v1.0.1"},
+        "v1.0.2":{"href":"v1_0_2", "name":"v1.0.2"},
+        "v1.0.3":{"href":"v1_0_3", "name":"v1.0.3"},
+        "v1.0.4":{"href":"v1_0_4", "name":"v1.0.4"},
+        "v1.0.5":{"href":"v1_0_5", "name":"v1.0.5"},
+        "v1.0.6":{"href":"v1_0_6", "name":"v1.0.6"},
+        "v1.0.7":{"href":"v1_0_7", "name":"v1.0.7"}
+    }
+</span>
+<script>
+    const topDiv = document.getElementById('top');
+    const mainDiv = document.getElementById('main');
+    const fileLink = JSON.parse(document.getElementById('fileLink').innerText.replace(/\s|\n/, ''));
+
+
+    const icon = document.getElementById('icon');
+    const title = document.getElementById('title');
+
+    var topHeight = 0.15;
+
+    function objectReset(params) {
+        screenResize();
+        document.addEventListener('resize', screenResize);
+
+    };
+
+    function screenResize() {
+        topDiv.width = window.innerWidth;
+        mainDiv.width = window.innerWidth;
+        if (window.innerHeight < 400) topHeight = 0.1;
+        else topHeight = 0.15;
+
+        topDiv.height = window.innerHeight * topHeight;
+        mainDiv.height = window.innerHeight * (1 - topHeight) - 10;
+
+        icon.height = topDiv.height * 0.9;
+        icon.width = topDiv.height * 0.9;
+        title.height = topDiv.height * 0.9;
+        title.width = topDiv.height * 3.6;
+
+        icon.click = function() {
+            document.getElementById(fileLink.new).click();
+        };
+
+        for (index in fileLink) {
+            if (index === 'new') continue;
+            const element = document.createElement('a');
+            element.href = `data/${fileLink[index].href}/index.html`;
+            element.id = index;
+            element.className = 'fileButton';
+            const text = document.createElement('span');
+            text.innerText = fileLink[index].name;
+            element.appendChild(text);
+            mainDiv.appendChild(element);
+        }
+    };
+</script>
+<script>
+    objectReset();
+</script>
+
+</html>
