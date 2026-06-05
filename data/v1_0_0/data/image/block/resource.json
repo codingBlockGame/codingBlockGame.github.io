@@ -1,0 +1,111 @@
+{
+    "debug": {
+        "normal": "debug"
+    },
+    "air": {
+        "normal": "air"
+    },
+    "door1P": {
+        "normal": "door1P"
+    },
+    "door2P": {
+        "normal": "door2P"
+    },
+    "portal1-x": {
+        "normal": "portal1-top",
+        "x": "portal1-top",
+        "y": "portal1-side1",
+        "z": "portal1-side1"
+    },
+    "portal1-z": {
+        "normal": "portal1-top",
+        "z": "portal1-top",
+        "y": "portal1-side2",
+        "x": "portal1-side3"
+    },
+    "portal2-x": {
+        "normal": "portal2-top",
+        "x": "portal2-top",
+        "y": "portal2-side1",
+        "z": "portal2-side1"
+    },
+    "portal2-z": {
+        "normal": "portal2-top",
+        "z": "portal2-top",
+        "y": "portal2-side2",
+        "x": "portal2-side3"
+    },
+    "portal3-x": {
+        "normal": "portal3-top",
+        "x": "portal3-top",
+        "y": "portal3-side1",
+        "z": "portal3-side1"
+    },
+    "portal3-z": {
+        "normal": "portal3-top",
+        "z": "portal3-top",
+        "y": "portal3-side2",
+        "x": "portal3-side3"
+    },
+    "portal4-x": {
+        "normal": "portal4-top",
+        "x": "portal4-top",
+        "y": "portal4-side1",
+        "z": "portal4-side1"
+    },
+    "portal4-z": {
+        "normal": "portal4-top",
+        "z": "portal4-top",
+        "y": "portal4-side2",
+        "x": "portal4-side3"
+    },
+    "step0": {
+        "normal": "step0",
+        "y": "step0T"
+    },
+    "step1": {
+        "normal": "step1",
+        "y": "stepT"
+    },
+    "step2": {
+        "normal": "step2",
+        "y": "stepT"
+    },
+    "step3": {
+        "normal": "step3",
+        "y": "stepT"
+    },
+    "step4": {
+        "normal": "step4",
+        "y": "stepT"
+    },
+    "stone0": {
+        "normal": "stone0"
+    },
+    "stone1": {
+        "normal": "stone1"
+    },
+    "stone2": {
+        "normal": "stone2"
+    },
+    "brick0": {
+        "normal": "brick0"
+    },
+    "brick1": {
+        "normal": "brick1"
+    },
+    "brick2": {
+        "normal": "brick2"
+    },
+    "wood": {
+        "normal": "wood"
+    },
+    "log": {
+        "normal": "log-side",
+        "y": "log-top"
+    },
+    "grass": {
+        "normal": "grass-side",
+        "y": "grass-top"
+    }
+}

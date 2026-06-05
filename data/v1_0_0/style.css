@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    display: block;
+    left: 0;
+    top: 0;
+    background-color: black;
+    font: 15px sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-family: "Press Start 2P", sans-serif;
+    /* cursor: none; */
+}
+
+#screen {
+    background-color: #00000000;
+}
+
+head,
+script,
+.hidden {
+    display: none;
+}
+
+#plannedSpeedBlock {
+    width: 200px;
+    height: 20px;
+    left: calc(50% - 100px - 5px);
+    top: calc(50% - 10px - 5px);
+    border-radius: 5px;
+    border: 5px rgb(255, 255, 255) solid;
+    z-index: 1;
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #plannedSpeed {
+        width: 0px;
+        height: 20px;
+        left: calc(50% - 100px);
+        top: calc(50% - 10px);
+        background-color: #0080ff;
+    }
+    #speed {
+        left: calc(50% - 95px);
+        top: calc(50% - 11px);
+        background-color: #00000000;
+    }
+    #speed::after {
+        content: "%";
+    }
+}
+
+#tips {
+    width: calc(100% - 20px);
+    height: 60px;
+    text-align: center;
+    border: #000000 10px double;
+    border-radius: 10px;
+    background-image: url('/data/image/tips/bg.png');
+    * {
+        position: relative;
+        background-color: #00000000;
+        display: inline-block;
+    }
+    span {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .italic {
+        font-style: italic;
+        color: rgb(191, 191, 191);
+        text-decoration: underline;
+    }
+    img {
+        top: 5px;
+        margin: 0 5px;
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "info": true,
+    "1P": {
+        "info": true,
+        "lv0": {
+            "info": false,
+            "name": "lv0.json",
+            "id": "lv0-1P"
+        }
+    },
+    "2P": {}
+}
