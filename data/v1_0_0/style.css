@@ -57,7 +57,7 @@ script,
     text-align: center;
     border: #000000 10px double;
     border-radius: 10px;
-    background-image: url('/data/image/tips/bg.png');
+    background-image: url('data/image/tips/bg.png');
     * {
         position: relative;
         background-color: #00000000;
