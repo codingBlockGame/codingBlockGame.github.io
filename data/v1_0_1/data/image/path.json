@@ -1,0 +1,1580 @@
+{
+    "info": true,
+    "block": {
+        "info": true,
+        "resource": {
+            "info": false,
+            "name": "resource.json",
+            "id": "resource"
+        },
+        "debug": {
+            "info": false,
+            "name": "debug.png",
+            "id": "debug",
+            "size": {
+                "width": 256,
+                "height": 256
+            },
+            "cutSize": 64
+        },
+        "air": {
+            "info": false,
+            "name": "air.png",
+            "id": "air",
+            "size": {
+                "width": 256,
+                "height": 256
+            },
+            "cutSize": 64
+        },
+        "door1P": {
+            "info": false,
+            "name": "door1P.png",
+            "id": "door1P",
+            "size": {
+                "width": 256,
+                "height": 8192
+            },
+            "cut": {
+                "type": "time",
+                "count": 32,
+                "width": 256,
+                "height": 256,
+                "0": { "x": 0, "y": 0 },
+                "1": { "x": 0, "y": 256 },
+                "2": { "x": 0, "y": 512 },
+                "3": { "x": 0, "y": 768 },
+                "4": { "x": 0, "y": 1024 },
+                "5": { "x": 0, "y": 1280 },
+                "6": { "x": 0, "y": 1536 },
+                "7": { "x": 0, "y": 1792 },
+                "8": { "x": 0, "y": 2048 },
+                "9": { "x": 0, "y": 2304 },
+                "10": { "x": 0, "y": 2560 },
+                "11": { "x": 0, "y": 2816 },
+                "12": { "x": 0, "y": 3072 },
+                "13": { "x": 0, "y": 3328 },
+                "14": { "x": 0, "y": 3584 },
+                "15": { "x": 0, "y": 3840 },
+                "16": { "x": 0, "y": 4096 },
+                "17": { "x": 0, "y": 4352 },
+                "18": { "x": 0, "y": 4608 },
+                "19": { "x": 0, "y": 4864 },
+                "20": { "x": 0, "y": 5120 },
+                "21": { "x": 0, "y": 5376 },
+                "22": { "x": 0, "y": 5632 },
+                "23": { "x": 0, "y": 5888 },
+                "24": { "x": 0, "y": 6144 },
+                "25": { "x": 0, "y": 6400 },
+                "26": { "x": 0, "y": 6656 },
+                "27": { "x": 0, "y": 6912 },
+                "28": { "x": 0, "y": 7168 },
+                "29": { "x": 0, "y": 7424 },
+                "30": { "x": 0, "y": 7680 },
+                "31": { "x": 0, "y": 7936 },
+                "speed": 50
+            },
+            "cutSize": 64
+        },
+        "door2P": {
+            "info": false,
+            "name": "door2P.png",
+            "id": "door2P",
+            "size": {
+                "width": 256,
+                "height": 8192
+            },
+            "cut": {
+                "type": "time",
+                "count": 32,
+                "width": 256,
+                "height": 256,
+                "0": { "x": 0, "y": 0 },
+                "1": { "x": 0, "y": 256 },
+                "2": { "x": 0, "y": 512 },
+                "3": { "x": 0, "y": 768 },
+                "4": { "x": 0, "y": 1024 },
+                "5": { "x": 0, "y": 1280 },
+                "6": { "x": 0, "y": 1536 },
+                "7": { "x": 0, "y": 1792 },
+                "8": { "x": 0, "y": 2048 },
+                "9": { "x": 0, "y": 2304 },
+                "10": { "x": 0, "y": 2560 },
+                "11": { "x": 0, "y": 2816 },
+                "12": { "x": 0, "y": 3072 },
+                "13": { "x": 0, "y": 3328 },
+                "14": { "x": 0, "y": 3584 },
+                "15": { "x": 0, "y": 3840 },
+                "16": { "x": 0, "y": 4096 },
+                "17": { "x": 0, "y": 4352 },
+                "18": { "x": 0, "y": 4608 },
+                "19": { "x": 0, "y": 4864 },
+                "20": { "x": 0, "y": 5120 },
+                "21": { "x": 0, "y": 5376 },
+                "22": { "x": 0, "y": 5632 },
+                "23": { "x": 0, "y": 5888 },
+                "24": { "x": 0, "y": 6144 },
+                "25": { "x": 0, "y": 6400 },
+                "26": { "x": 0, "y": 6656 },
+                "27": { "x": 0, "y": 6912 },
+                "28": { "x": 0, "y": 7168 },
+                "29": { "x": 0, "y": 7424 },
+                "30": { "x": 0, "y": 7680 },
+                "31": { "x": 0, "y": 7936 },
+                "speed": 50
+            },
+            "cutSize": 64
+        },
+        "portal1": {
+            "info": true,
+            "top": {
+                "info": false,
+                "name": "top.png",
+                "id": "portal1-top",
+                "size": {
+                    "width": 256,
+                    "height": 8192
+                },
+                "cut": {
+                    "type": "time",
+                    "count": 32,
+                    "width": 256,
+                    "height": 256,
+                    "0": { "x": 0, "y": 0 },
+                    "1": { "x": 0, "y": 256 },
+                    "2": { "x": 0, "y": 512 },
+                    "3": { "x": 0, "y": 768 },
+                    "4": { "x": 0, "y": 1024 },
+                    "5": { "x": 0, "y": 1280 },
+                    "6": { "x": 0, "y": 1536 },
+                    "7": { "x": 0, "y": 1792 },
+                    "8": { "x": 0, "y": 2048 },
+                    "9": { "x": 0, "y": 2304 },
+                    "10": { "x": 0, "y": 2560 },
+                    "11": { "x": 0, "y": 2816 },
+                    "12": { "x": 0, "y": 3072 },
+                    "13": { "x": 0, "y": 3328 },
+                    "14": { "x": 0, "y": 3584 },
+                    "15": { "x": 0, "y": 3840 },
+                    "16": { "x": 0, "y": 4096 },
+                    "17": { "x": 0, "y": 4352 },
+                    "18": { "x": 0, "y": 4608 },
+                    "19": { "x": 0, "y": 4864 },
+                    "20": { "x": 0, "y": 5120 },
+                    "21": { "x": 0, "y": 5376 },
+                    "22": { "x": 0, "y": 5632 },
+                    "23": { "x": 0, "y": 5888 },
+                    "24": { "x": 0, "y": 6144 },
+                    "25": { "x": 0, "y": 6400 },
+                    "26": { "x": 0, "y": 6656 },
+                    "27": { "x": 0, "y": 6912 },
+                    "28": { "x": 0, "y": 7168 },
+                    "29": { "x": 0, "y": 7424 },
+                    "30": { "x": 0, "y": 7680 },
+                    "31": { "x": 0, "y": 7936 },
+                    "speed": 50
+                },
+                "cutSize": 64
+            },
+            "side0": {
+                "info": false,
+                "name": "side0.png",
+                "id": "portal1-side0",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            },
+            "side1": {
+                "info": false,
+                "name": "side1.png",
+                "id": "portal1-side1",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            },
+            "side2": {
+                "info": false,
+                "name": "side2.png",
+                "id": "portal1-side2",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            },
+            "side3": {
+                "info": false,
+                "name": "side3.png",
+                "id": "portal1-side3",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            }
+        },
+        "portal2": {
+            "info": true,
+            "top": {
+                "info": false,
+                "name": "top.png",
+                "id": "portal2-top",
+                "size": {
+                    "width": 256,
+                    "height": 8192
+                },
+                "cut": {
+                    "type": "time",
+                    "count": 32,
+                    "width": 256,
+                    "height": 256,
+                    "0": { "x": 0, "y": 0 },
+                    "1": { "x": 0, "y": 256 },
+                    "2": { "x": 0, "y": 512 },
+                    "3": { "x": 0, "y": 768 },
+                    "4": { "x": 0, "y": 1024 },
+                    "5": { "x": 0, "y": 1280 },
+                    "6": { "x": 0, "y": 1536 },
+                    "7": { "x": 0, "y": 1792 },
+                    "8": { "x": 0, "y": 2048 },
+                    "9": { "x": 0, "y": 2304 },
+                    "10": { "x": 0, "y": 2560 },
+                    "11": { "x": 0, "y": 2816 },
+                    "12": { "x": 0, "y": 3072 },
+                    "13": { "x": 0, "y": 3328 },
+                    "14": { "x": 0, "y": 3584 },
+                    "15": { "x": 0, "y": 3840 },
+                    "16": { "x": 0, "y": 4096 },
+                    "17": { "x": 0, "y": 4352 },
+                    "18": { "x": 0, "y": 4608 },
+                    "19": { "x": 0, "y": 4864 },
+                    "20": { "x": 0, "y": 5120 },
+                    "21": { "x": 0, "y": 5376 },
+                    "22": { "x": 0, "y": 5632 },
+                    "23": { "x": 0, "y": 5888 },
+                    "24": { "x": 0, "y": 6144 },
+                    "25": { "x": 0, "y": 6400 },
+                    "26": { "x": 0, "y": 6656 },
+                    "27": { "x": 0, "y": 6912 },
+                    "28": { "x": 0, "y": 7168 },
+                    "29": { "x": 0, "y": 7424 },
+                    "30": { "x": 0, "y": 7680 },
+                    "31": { "x": 0, "y": 7936 },
+                    "speed": 50
+                },
+                "cutSize": 64
+            },
+            "side0": {
+                "info": false,
+                "name": "side0.png",
+                "id": "portal2-side0",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            },
+            "side1": {
+                "info": false,
+                "name": "side1.png",
+                "id": "portal2-side1",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            },
+            "side2": {
+                "info": false,
+                "name": "side2.png",
+                "id": "portal2-side2",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            },
+            "side3": {
+                "info": false,
+                "name": "side3.png",
+                "id": "portal2-side3",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            }
+        },
+        "portal3": {
+            "info": true,
+            "top": {
+                "info": false,
+                "name": "top.png",
+                "id": "portal3-top",
+                "size": {
+                    "width": 256,
+                    "height": 8192
+                },
+                "cut": {
+                    "type": "time",
+                    "count": 32,
+                    "width": 256,
+                    "height": 256,
+                    "0": { "x": 0, "y": 0 },
+                    "1": { "x": 0, "y": 256 },
+                    "2": { "x": 0, "y": 512 },
+                    "3": { "x": 0, "y": 768 },
+                    "4": { "x": 0, "y": 1024 },
+                    "5": { "x": 0, "y": 1280 },
+                    "6": { "x": 0, "y": 1536 },
+                    "7": { "x": 0, "y": 1792 },
+                    "8": { "x": 0, "y": 2048 },
+                    "9": { "x": 0, "y": 2304 },
+                    "10": { "x": 0, "y": 2560 },
+                    "11": { "x": 0, "y": 2816 },
+                    "12": { "x": 0, "y": 3072 },
+                    "13": { "x": 0, "y": 3328 },
+                    "14": { "x": 0, "y": 3584 },
+                    "15": { "x": 0, "y": 3840 },
+                    "16": { "x": 0, "y": 4096 },
+                    "17": { "x": 0, "y": 4352 },
+                    "18": { "x": 0, "y": 4608 },
+                    "19": { "x": 0, "y": 4864 },
+                    "20": { "x": 0, "y": 5120 },
+                    "21": { "x": 0, "y": 5376 },
+                    "22": { "x": 0, "y": 5632 },
+                    "23": { "x": 0, "y": 5888 },
+                    "24": { "x": 0, "y": 6144 },
+                    "25": { "x": 0, "y": 6400 },
+                    "26": { "x": 0, "y": 6656 },
+                    "27": { "x": 0, "y": 6912 },
+                    "28": { "x": 0, "y": 7168 },
+                    "29": { "x": 0, "y": 7424 },
+                    "30": { "x": 0, "y": 7680 },
+                    "31": { "x": 0, "y": 7936 },
+                    "speed": 50
+                },
+                "cutSize": 64
+            },
+            "side0": {
+                "info": false,
+                "name": "side0.png",
+                "id": "portal3-side0",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            },
+            "side1": {
+                "info": false,
+                "name": "side1.png",
+                "id": "portal3-side1",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            },
+            "side2": {
+                "info": false,
+                "name": "side2.png",
+                "id": "portal3-side2",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            },
+            "side3": {
+                "info": false,
+                "name": "side3.png",
+                "id": "portal3-side3",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            }
+        },
+        "portal4": {
+            "info": true,
+            "top": {
+                "info": false,
+                "name": "top.png",
+                "id": "portal4-top",
+                "size": {
+                    "width": 256,
+                    "height": 8192
+                },
+                "cut": {
+                    "type": "time",
+                    "count": 32,
+                    "width": 256,
+                    "height": 256,
+                    "0": { "x": 0, "y": 0 },
+                    "1": { "x": 0, "y": 256 },
+                    "2": { "x": 0, "y": 512 },
+                    "3": { "x": 0, "y": 768 },
+                    "4": { "x": 0, "y": 1024 },
+                    "5": { "x": 0, "y": 1280 },
+                    "6": { "x": 0, "y": 1536 },
+                    "7": { "x": 0, "y": 1792 },
+                    "8": { "x": 0, "y": 2048 },
+                    "9": { "x": 0, "y": 2304 },
+                    "10": { "x": 0, "y": 2560 },
+                    "11": { "x": 0, "y": 2816 },
+                    "12": { "x": 0, "y": 3072 },
+                    "13": { "x": 0, "y": 3328 },
+                    "14": { "x": 0, "y": 3584 },
+                    "15": { "x": 0, "y": 3840 },
+                    "16": { "x": 0, "y": 4096 },
+                    "17": { "x": 0, "y": 4352 },
+                    "18": { "x": 0, "y": 4608 },
+                    "19": { "x": 0, "y": 4864 },
+                    "20": { "x": 0, "y": 5120 },
+                    "21": { "x": 0, "y": 5376 },
+                    "22": { "x": 0, "y": 5632 },
+                    "23": { "x": 0, "y": 5888 },
+                    "24": { "x": 0, "y": 6144 },
+                    "25": { "x": 0, "y": 6400 },
+                    "26": { "x": 0, "y": 6656 },
+                    "27": { "x": 0, "y": 6912 },
+                    "28": { "x": 0, "y": 7168 },
+                    "29": { "x": 0, "y": 7424 },
+                    "30": { "x": 0, "y": 7680 },
+                    "31": { "x": 0, "y": 7936 },
+                    "speed": 50
+                },
+                "cutSize": 64
+            },
+            "side0": {
+                "info": false,
+                "name": "side0.png",
+                "id": "portal4-side0",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            },
+            "side1": {
+                "info": false,
+                "name": "side1.png",
+                "id": "portal4-side1",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            },
+            "side2": {
+                "info": false,
+                "name": "side2.png",
+                "id": "portal4-side2",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            },
+            "side3": {
+                "info": false,
+                "name": "side3.png",
+                "id": "portal4-side3",
+                "size": {
+                    "width": 256,
+                    "height": 256
+                },
+                "cutSize": 64
+            }
+        },
+        "wood0": {
+            "info": false,
+            "name": "wood.png",
+            "id": "wood",
+            "size": {
+                "width": 256,
+                "height": 256
+            },
+            "cutSize": 64
+        },
+        "log-side": {
+            "info": false,
+            "name": "log-side.png",
+            "id": "log-side",
+            "size": {
+                "width": 256,
+                "height": 256
+            },
+            "cutSize": 64
+        },
+        "log-top": {
+            "info": false,
+            "name": "log-top.png",
+            "id": "log-top",
+            "size": {
+                "width": 256,
+                "height": 256
+            },
+            "cutSize": 64
+        },
+        "grass-side": {
+            "info": false,
+            "name": "grass-side.png",
+            "id": "grass-side",
+            "size": {
+                "width": 256,
+                "height": 256
+            },
+            "cutSize": 64
+        },
+        "grass-top": {
+            "info": false,
+            "name": "grass-top.png",
+            "id": "grass-top",
+            "size": {
+                "width": 256,
+                "height": 256
+            },
+            "cutSize": 64
+        },
+        "stone0": {
+            "info": false,
+            "name": "stone0.png",
+            "id": "stone0",
+            "size": {
+                "width": 256,
+                "height": 256
+            },
+            "cutSize": 64
+        },
+        "stone1": {
+            "info": false,
+            "name": "stone1.png",
+            "id": "stone1",
+            "size": {
+                "width": 256,
+                "height": 256
+            },
+            "cutSize": 64
+        },
+        "stone2": {
+            "info": false,
+            "name": "stone2.png",
+            "id": "stone2",
+            "size": {
+                "width": 256,
+                "height": 256
+            },
+            "cutSize": 64
+        },
+        "brick0": {
+            "info": false,
+            "name": "brick0.png",
+            "id": "brick0",
+            "size": {
+                "width": 256,
+                "height": 256
+            },
+            "cutSize": 64
+        },
+        "brick1": {
+            "info": false,
+            "name": "brick1.png",
+            "id": "brick1",
+            "size": {
+                "width": 256,
+                "height": 256
+            },
+            "cutSize": 64
+        },
+        "brick2": {
+            "info": false,
+            "name": "brick2.png",
+            "id": "brick2",
+            "size": {
+                "width": 256,
+                "height": 256
+            },
+            "cutSize": 64
+        }
+    },
+    "entity": {
+        "info": true,
+        "upSign": {
+            "info": false,
+            "name": "upSign.png",
+            "id": "upSign",
+            "size": {
+                "width": 320,
+                "height": 320
+            },
+            "cutSize": 40
+        },
+        "rightSign": {
+            "info": false,
+            "name": "rightSign.png",
+            "id": "rightSign",
+            "size": {
+                "width": 320,
+                "height": 320
+            },
+            "cutSize": 40
+        },
+        "leftSign": {
+            "info": false,
+            "name": "leftSign.png",
+            "id": "leftSign",
+            "size": {
+                "width": 320,
+                "height": 320
+            },
+            "cutSize": 40
+        },
+        "downSign": {
+            "info": false,
+            "name": "downSign.png",
+            "id": "downSign",
+            "size": {
+                "width": 320,
+                "height": 320
+            },
+            "cutSize": 40
+        },
+        "shadow": {
+            "info": false,
+            "name": "shadow.png",
+            "id": "shadow",
+            "size": {
+                "width": 160,
+                "height": 160
+            },
+            "cutSize": 40
+        },
+        "player1": {
+            "info": false,
+            "name": "player1.png",
+            "id": "player1",
+            "size": {
+                "width": 640,
+                "height": 320
+            },
+            "cut": {
+                "type": "data",
+                "count": 5,
+                "top": {
+                    "x": 160,
+                    "y": 0,
+                    "width": 160,
+                    "height": 160
+                },
+                "front": {
+                    "x": 160,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "back": {
+                    "x": 480,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "right": {
+                    "x": 320,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "left": {
+                    "x": 0,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                }
+            },
+            "cutSize": {
+                "x": 40,
+                "y": 40,
+                "z": 40
+            }
+        },
+        "player2": {
+            "info": false,
+            "name": "player2.png",
+            "id": "player2",
+            "size": {
+                "width": 640,
+                "height": 320
+            },
+            "cut": {
+                "type": "data",
+                "count": 5,
+                "top": {
+                    "x": 160,
+                    "y": 0,
+                    "width": 160,
+                    "height": 160
+                },
+                "front": {
+                    "x": 160,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "back": {
+                    "x": 480,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "right": {
+                    "x": 320,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "left": {
+                    "x": 0,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                }
+            },
+            "cutSize": {
+                "x": 40,
+                "y": 40,
+                "z": 40
+            }
+        },
+        "test0": {
+            "info": false,
+            "name": "test0.png",
+            "id": "test0",
+            "size": {
+                "width": 192,
+                "height": 192
+            },
+            "cut": {
+                "type": "data",
+                "count": 1,
+                "top": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 192,
+                    "height": 192
+                }
+            },
+            "cutSize": {
+                "x": 48,
+                "y": 0,
+                "z": 48
+            }
+        },
+        "test1": {
+            "info": false,
+            "name": "test1.png",
+            "id": "test1",
+            "size": {
+                "width": 192,
+                "height": 192
+            },
+            "cut": {
+                "type": "data",
+                "count": 1,
+                "top": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 192,
+                    "height": 192
+                }
+            },
+            "cutSize": {
+                "x": 48,
+                "y": 0,
+                "z": 48
+            }
+        },
+        "test2": {
+            "info": false,
+            "name": "test2.png",
+            "id": "test2",
+            "size": {
+                "width": 192,
+                "height": 192
+            },
+            "cut": {
+                "type": "data",
+                "count": 1,
+                "top": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 192,
+                    "height": 192
+                }
+            },
+            "cutSize": {
+                "x": 48,
+                "y": 0,
+                "z": 48
+            }
+        },
+        "test3": {
+            "info": false,
+            "name": "test3.png",
+            "id": "test3",
+            "size": {
+                "width": 192,
+                "height": 192
+            },
+            "cut": {
+                "type": "data",
+                "count": 1,
+                "top": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 192,
+                    "height": 192
+                }
+            },
+            "cutSize": {
+                "x": 48,
+                "y": 0,
+                "z": 48
+            }
+        },
+        "test4": {
+            "info": false,
+            "name": "test4.png",
+            "id": "test4",
+            "size": {
+                "width": 192,
+                "height": 192
+            },
+            "cut": {
+                "type": "data",
+                "count": 1,
+                "top": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 192,
+                    "height": 192
+                }
+            },
+            "cutSize": {
+                "x": 48,
+                "y": 0,
+                "z": 48
+            }
+        },
+        "test5": {
+            "info": false,
+            "name": "test5.png",
+            "id": "test5",
+            "size": {
+                "width": 192,
+                "height": 192
+            },
+            "cut": {
+                "type": "data",
+                "count": 1,
+                "top": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 192,
+                    "height": 192
+                }
+            },
+            "cutSize": {
+                "x": 48,
+                "y": 0,
+                "z": 48
+            }
+        },
+        "test6": {
+            "info": false,
+            "name": "test6.png",
+            "id": "test6",
+            "size": {
+                "width": 192,
+                "height": 192
+            },
+            "cut": {
+                "type": "data",
+                "count": 1,
+                "top": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 192,
+                    "height": 192
+                }
+            },
+            "cutSize": {
+                "x": 48,
+                "y": 0,
+                "z": 48
+            }
+        },
+        "block0": {
+            "info": false,
+            "name": "block0.png",
+            "id": "block0",
+            "size": {
+                "width": 640,
+                "height": 320
+            },
+            "cut": {
+                "type": "data",
+                "count": 5,
+                "top": {
+                    "x": 160,
+                    "y": 0,
+                    "width": 160,
+                    "height": 160
+                },
+                "front": {
+                    "x": 160,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "back": {
+                    "x": 480,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "right": {
+                    "x": 320,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "left": {
+                    "x": 0,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                }
+            },
+            "cutSize": {
+                "x": 40,
+                "y": 40,
+                "z": 40
+            }
+        },
+        "block1": {
+            "info": false,
+            "name": "block1.png",
+            "id": "block1",
+            "size": {
+                "width": 640,
+                "height": 320
+            },
+            "cut": {
+                "type": "data",
+                "count": 5,
+                "top": {
+                    "x": 160,
+                    "y": 0,
+                    "width": 160,
+                    "height": 160
+                },
+                "front": {
+                    "x": 160,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "back": {
+                    "x": 480,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "right": {
+                    "x": 320,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "left": {
+                    "x": 0,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                }
+            },
+            "cutSize": {
+                "x": 40,
+                "y": 40,
+                "z": 40
+            }
+        },
+        "block2": {
+            "info": false,
+            "name": "block2.png",
+            "id": "block2",
+            "size": {
+                "width": 640,
+                "height": 320
+            },
+            "cut": {
+                "type": "data",
+                "count": 5,
+                "top": {
+                    "x": 160,
+                    "y": 0,
+                    "width": 160,
+                    "height": 160
+                },
+                "front": {
+                    "x": 160,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "back": {
+                    "x": 480,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "right": {
+                    "x": 320,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "left": {
+                    "x": 0,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                }
+            },
+            "cutSize": {
+                "x": 40,
+                "y": 40,
+                "z": 40
+            }
+        },
+        "block3": {
+            "info": false,
+            "name": "block3.png",
+            "id": "block3",
+            "size": {
+                "width": 640,
+                "height": 320
+            },
+            "cut": {
+                "type": "data",
+                "count": 5,
+                "top": {
+                    "x": 160,
+                    "y": 0,
+                    "width": 160,
+                    "height": 160
+                },
+                "front": {
+                    "x": 160,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "back": {
+                    "x": 480,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "right": {
+                    "x": 320,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "left": {
+                    "x": 0,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                }
+            },
+            "cutSize": {
+                "x": 40,
+                "y": 40,
+                "z": 40
+            }
+        },
+        "block4": {
+            "info": false,
+            "name": "block4.png",
+            "id": "block4",
+            "size": {
+                "width": 640,
+                "height": 320
+            },
+            "cut": {
+                "type": "data",
+                "count": 5,
+                "top": {
+                    "x": 160,
+                    "y": 0,
+                    "width": 160,
+                    "height": 160
+                },
+                "front": {
+                    "x": 160,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "back": {
+                    "x": 480,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "right": {
+                    "x": 320,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "left": {
+                    "x": 0,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                }
+            },
+            "cutSize": {
+                "x": 40,
+                "y": 40,
+                "z": 40
+            }
+        },
+        "block5": {
+            "info": false,
+            "name": "block5.png",
+            "id": "block5",
+            "size": {
+                "width": 640,
+                "height": 320
+            },
+            "cut": {
+                "type": "data",
+                "count": 5,
+                "top": {
+                    "x": 160,
+                    "y": 0,
+                    "width": 160,
+                    "height": 160
+                },
+                "front": {
+                    "x": 160,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "back": {
+                    "x": 480,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "right": {
+                    "x": 320,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "left": {
+                    "x": 0,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                }
+            },
+            "cutSize": {
+                "x": 40,
+                "y": 40,
+                "z": 40
+            }
+        },
+        "block6": {
+            "info": false,
+            "name": "block6.png",
+            "id": "block6",
+            "size": {
+                "width": 640,
+                "height": 320
+            },
+            "cut": {
+                "type": "data",
+                "count": 5,
+                "top": {
+                    "x": 160,
+                    "y": 0,
+                    "width": 160,
+                    "height": 160
+                },
+                "front": {
+                    "x": 160,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "back": {
+                    "x": 480,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "right": {
+                    "x": 320,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                },
+                "left": {
+                    "x": 0,
+                    "y": 160,
+                    "width": 160,
+                    "height": 160
+                }
+            },
+            "cutSize": {
+                "x": 40,
+                "y": 40,
+                "z": 40
+            }
+        }
+    },
+    "menu": {
+        "info": true,
+        "title": {
+            "info": true,
+            "titleB": {
+                "info": false,
+                "name": "titleB.png",
+                "id": "titleB",
+                "size": {
+                    "width": 960,
+                    "height": 240
+                },
+                "cutSize": {
+                    "width": 1000,
+                    "height": 200
+                }
+            },
+            "titleL": {
+                "info": false,
+                "name": "titleL.png",
+                "id": "titleL",
+                "size": {
+                    "width": 960,
+                    "height": 240
+                },
+                "cutSize": {
+                    "width": 1000,
+                    "height": 200
+                }
+            },
+            "titleO": {
+                "info": false,
+                "name": "titleO.png",
+                "id": "titleO",
+                "size": {
+                    "width": 960,
+                    "height": 240
+                },
+                "cutSize": {
+                    "width": 1000,
+                    "height": 200
+                }
+            },
+            "titleC": {
+                "info": false,
+                "name": "titleC.png",
+                "id": "titleC",
+                "size": {
+                    "width": 960,
+                    "height": 240
+                },
+                "cutSize": {
+                    "width": 1000,
+                    "height": 200
+                }
+            },
+            "titleK": {
+                "info": false,
+                "name": "titleK.png",
+                "id": "titleK",
+                "size": {
+                    "width": 960,
+                    "height": 240
+                },
+                "cutSize": {
+                    "width": 1000,
+                    "height": 200
+                }
+            },
+            "titleG": {
+                "info": false,
+                "name": "titleG.png",
+                "id": "titleG",
+                "size": {
+                    "width": 960,
+                    "height": 240
+                },
+                "cutSize": {
+                    "width": 1000,
+                    "height": 200
+                }
+            },
+            "titleA": {
+                "info": false,
+                "name": "titleA.png",
+                "id": "titleA",
+                "size": {
+                    "width": 960,
+                    "height": 240
+                },
+                "cutSize": {
+                    "width": 1000,
+                    "height": 200
+                }
+            },
+            "titleM": {
+                "info": false,
+                "name": "titleM.png",
+                "id": "titleM",
+                "size": {
+                    "width": 960,
+                    "height": 240
+                },
+                "cutSize": {
+                    "width": 1000,
+                    "height": 200
+                }
+            },
+            "titleE": {
+                "info": false,
+                "name": "titleE.png",
+                "id": "titleE",
+                "size": {
+                    "width": 960,
+                    "height": 240
+                },
+                "cutSize": {
+                    "width": 1000,
+                    "height": 200
+                }
+            }
+        },
+        "initBackground": {
+            "info": false,
+            "name": "initBackground.png",
+            "id": "initBackground",
+            "size": {
+                "width": 1024,
+                "height": 768
+            },
+            "cutSize": {
+                "width": 4,
+                "height": 3
+            }
+        },
+        "gameBackground": {
+            "info": false,
+            "name": "gameBackground.png",
+            "id": "gameBackground",
+            "size": {
+                "width": 1536,
+                "height": 1024
+            },
+            "cutSize": {
+                "width": 3,
+                "height": 2
+            }
+        },
+        "startButton": {
+            "info": false,
+            "name": "startButton.png",
+            "id": "startButton",
+            "size": {
+                "width": 480,
+                "height": 160
+            },
+            "cutSize": {
+                "width": 360,
+                "height": 100
+            }
+        },
+        "modeButton": {
+            "info": false,
+            "name": "modeButton.png",
+            "id": "modeButton",
+            "size": {
+                "width": 400,
+                "height": 160
+            },
+            "cutSize": {
+                "width": 300,
+                "height": 100
+            }
+        },
+        "resetButton": {
+            "info": false,
+            "name": "resetButton.png",
+            "id": "resetButton",
+            "size": {
+                "width": 480,
+                "height": 160
+            },
+            "cutSize": {
+                "width": 360,
+                "height": 100
+            }
+        },
+        "settingButton": {
+            "info": false,
+            "name": "settingButton.png",
+            "id": "settingButton",
+            "size": {
+                "width": 128,
+                "height": 128
+            },
+            "cutSize": {
+                "width": 64,
+                "height": 64
+            }
+        },
+        "languageButton": {
+            "info": false,
+            "name": "languageButton.png",
+            "id": "languageButton",
+            "size": {
+                "width": 128,
+                "height": 128
+            },
+            "cutSize": {
+                "width": 64,
+                "height": 64
+            }
+        },
+        "informationButton": {
+            "info": false,
+            "name": "informationButton.png",
+            "id": "informationButton",
+            "size": {
+                "width": 128,
+                "height": 128
+            },
+            "cutSize": {
+                "width": 64,
+                "height": 64
+            }
+        }
+    },
+    "tips": {
+        "info": true,
+        "lv0": {
+            "info": true,
+            "1P": {
+                "info": true
+            },
+            "2P": {
+                "info": true
+            },
+            "both": {
+                "info": true,
+                "button": {
+                    "info": false,
+                    "name": "button.png",
+                    "id": "button",
+                    "size": {
+                        "width": 64,
+                        "height": 64
+                    },
+                    "cutSize": {
+                        "width": 64,
+                        "height": 64
+                    }
+                },
+                "menuButton": {
+                    "info": false,
+                    "name": "menuButton.png",
+                    "id": "menuButton",
+                    "size": {
+                        "width": 64,
+                        "height": 64
+                    },
+                    "cutSize": {
+                        "width": 64,
+                        "height": 64
+                    }
+                },
+                "upArrow": {
+                    "info": false,
+                    "name": "upArrow.png",
+                    "id": "upArrow",
+                    "size": {
+                        "width": 64,
+                        "height": 64
+                    },
+                    "cutSize": {
+                        "width": 64,
+                        "height": 64
+                    }
+                },
+                "rightArrow": {
+                    "info": false,
+                    "name": "rightArrow.png",
+                    "id": "rightArrow",
+                    "size": {
+                        "width": 64,
+                        "height": 64
+                    },
+                    "cutSize": {
+                        "width": 64,
+                        "height": 64
+                    }
+                },
+                "downArrow": {
+                    "info": false,
+                    "name": "downArrow.png",
+                    "id": "downArrow",
+                    "size": {
+                        "width": 64,
+                        "height": 64
+                    },
+                    "cutSize": {
+                        "width": 64,
+                        "height": 64
+                    }
+                },
+                "leftArrow": {
+                    "info": false,
+                    "name": "leftArrow.png",
+                    "id": "leftArrow",
+                    "size": {
+                        "width": 64,
+                        "height": 64
+                    },
+                    "cutSize": {
+                        "width": 64,
+                        "height": 64
+                    }
+                }
+            }
+        }
+    }
+}
