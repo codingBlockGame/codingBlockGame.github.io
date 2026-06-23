@@ -1,0 +1,12 @@
+{
+    "image": {
+        "id": "imageData",
+        "type": "img",
+        "name": "image"
+    },
+    "level": {
+        "id": "levelData",
+        "type": "span",
+        "name": "map"
+    }
+}
