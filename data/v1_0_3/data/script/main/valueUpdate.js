@@ -119,7 +119,7 @@ function updateValue() {
     if (inMenu || inTurn) {
         startTime += deltaTime;
     }
-    gameTime = (Date.now() - startTime) / 1000 * speed + 11000;
+    gameTime = (Date.now() - startTime) / 1000 * speed;
     FPSlist.unshift(1000 / deltaTime * speed);
     FPSlist = FPSlist.slice(0, 1);
     FPS = floor(sum(FPSlist) / FPSlist.length);
