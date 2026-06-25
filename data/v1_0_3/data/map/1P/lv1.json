@@ -1,0 +1,24 @@
+{
+    "map": 0,
+    "bg": {
+        "x": "wood",
+        "y": "grass",
+        "z": "wood"
+    },
+    "player": {
+        "1": { "pos": [5, 0, 5] }
+    },
+    "size": 5,
+    "tips": [{
+        "start": 1,
+        "end": 3,
+        "opacity": 0.5,
+        "text": [
+            "※歡迎來到關卡1"
+        ]
+    }],
+    "portal": {},
+    "entity": [],
+    "blocks": [],
+    "functions": []
+}

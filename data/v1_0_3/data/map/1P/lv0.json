@@ -1,0 +1,489 @@
+{
+    "map": 0,
+    "bg": {
+        "x": "wood",
+        "y": "grass",
+        "z": "wood"
+    },
+    "player": {
+        "1": { "pos": [5, 0, 5] }
+    },
+    "size": 11,
+    "tips": [{
+            "start": 1,
+            "end": 3,
+            "opacity": 0.5,
+            "text": [
+                "※歡迎來到關卡教學"
+            ]
+        },
+        {
+            "start": 3,
+            "end": 5.5,
+            "opacity": 0.5,
+            "text": [
+                "※按下",
+                { "type": "image", "id": "redButton" },
+                "可以打開選單"
+            ]
+        },
+        {
+            "start": 5.5,
+            "end": 8,
+            "opacity": 0.5,
+            "text": [
+                "※卡關時可以按",
+                { "type": "image", "id": "greenButton" },
+                "重置地圖"
+            ]
+        },
+        {
+            "start": 8,
+            "end": 11,
+            "opacity": 0.5,
+            "text": [
+                "※操作搖桿控制角色移動"
+            ]
+        },
+        {
+            "start": 11,
+            "end": 99999999,
+            "opacity": 0.5,
+            "text": [
+                "/※移動角色以繼續教學"
+            ]
+        }
+    ],
+    "portal": {},
+    "entity": [],
+    "blocks": [],
+    "functions": [{
+            "loop": false,
+            "type": "set",
+            "input": [{
+                "type": "string",
+                "name": "isMove"
+            }, {
+                "type": "bool",
+                "name": false
+            }]
+        }, {
+            "loop": false,
+            "type": "set",
+            "input": [{
+                "type": "string",
+                "name": "runType"
+            }, {
+                "type": "number",
+                "name": 0
+            }]
+        }, {
+            "loop": false,
+            "type": "if",
+            "input": [{
+                "type": "variable",
+                "name": "isMove"
+            }, {
+                "type": "comparison",
+                "name": "="
+            }, {
+                "type": "bool",
+                "name": true
+            }],
+            "command": [
+                { "type": "exitTips" },
+                {
+                    "type": "addTips",
+                    "data": {
+                        "deltaTime": 1,
+                        "time": 3,
+                        "opacity": 0.5,
+                        "text": [
+                            "※接下來是解謎教學"
+                        ]
+                    }
+                }, {
+                    "type": "delay",
+                    "data": {
+                        "time": 5,
+                        "command": [{
+                                "type": "addTips",
+                                "data": {
+                                    "deltaTime": 0,
+                                    "time": 2,
+                                    "opacity": 0.5,
+                                    "text": [
+                                        "※關卡中會出現各種顏色的方塊"
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "addTips",
+                                "data": {
+                                    "deltaTime": 3,
+                                    "time": 1,
+                                    "opacity": 0.5,
+                                    "text": [
+                                        "※你可以推動這些方塊"
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "addTips",
+                                "data": {
+                                    "deltaTime": 5,
+                                    "time": 2,
+                                    "opacity": 0.5,
+                                    "text": [
+                                        "※推到同顏色的觸發器上就會觸發機關"
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "addTips",
+                                "data": {
+                                    "deltaTime": 8,
+                                    "time": 99999999,
+                                    "opacity": 0.5,
+                                    "text": [
+                                        "/※觸發",
+                                        { "type": "image", "id": "test2" },
+                                        "/機關以繼續教學"
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "set",
+                                "data": {
+                                    "name": { "type": "string", "name": "runType" },
+                                    "value": { "type": "number", "name": 1 }
+                                }
+                            },
+                            {
+                                "type": "summon",
+                                "data": {
+                                    "type": "block2",
+                                    "id": "block2",
+                                    "pos": [7, 3, 5],
+                                    "tag": {}
+                                }
+                            },
+                            {
+                                "type": "delay",
+                                "data": {
+                                    "time": 8.5,
+                                    "command": [{
+                                        "type": "summon",
+                                        "data": {
+                                            "type": "test2",
+                                            "id": "test2",
+                                            "pos": [3, -0.5, 5],
+                                            "tag": {
+                                                "noGravity": true,
+                                                "noMovement": true,
+                                                "push": false
+                                            }
+                                        }
+                                    }]
+                                }
+                            },
+                            { "type": "tp", "data": { "id": 0, "pos": [5, 0, 5] } },
+                            { "type": "setblock", "data": { "id": "log", "pos": [2, 0, 4] } },
+                            { "type": "setblock", "data": { "id": "stone1", "pos": [2, 1, 4] } },
+                            { "type": "setblock", "data": { "id": "stone1", "pos": [2, 1, 5] } },
+                            { "type": "setblock", "data": { "id": "stone1", "pos": [2, 1, 6] } },
+                            { "type": "setblock", "data": { "id": "log", "pos": [2, 0, 6] } }
+                        ]
+                    }
+                }
+            ]
+        }, {
+            "loop": false,
+            "type": "if",
+            "input": [{
+                "type": "entity",
+                "name": ["tagData", "push"],
+                "id": "test2"
+            }, {
+                "type": "comparison",
+                "name": "="
+            }, {
+                "type": "bool",
+                "name": true
+            }],
+            "command": [{
+                    "type": "set",
+                    "data": {
+                        "name": { "type": "string", "name": "runType" },
+                        "value": { "type": "number", "name": 0 }
+                    }
+                },
+                { "type": "exitTips" },
+                {
+                    "type": "addTips",
+                    "data": {
+                        "deltaTime": 1,
+                        "time": 1,
+                        "opacity": 0.5,
+                        "text": [
+                            "※接下來是傳送門教學"
+                        ]
+                    }
+                },
+                {
+                    "type": "addTips",
+                    "data": {
+                        "deltaTime": 3,
+                        "time": 1,
+                        "opacity": 0.5,
+                        "text": [
+                            "※地圖中會有不同顏色的傳送門"
+                        ]
+                    }
+                },
+                {
+                    "type": "addTips",
+                    "data": {
+                        "deltaTime": 5,
+                        "time": 1,
+                        "opacity": 0.5,
+                        "text": [
+                            "※進入傳送門中會傳送到特定地方"
+                        ]
+                    }
+                },
+                {
+                    "type": "addTips",
+                    "data": {
+                        "deltaTime": 7,
+                        "time": 1,
+                        "opacity": 0.5,
+                        "text": [
+                            "※現在，請進入紅色傳送門"
+                        ]
+                    }
+                },
+                {
+                    "type": "addTips",
+                    "data": {
+                        "deltaTime": 9,
+                        "time": 1,
+                        "opacity": 0.5,
+                        "text": [
+                            "※並觸發",
+                            { "type": "image", "id": "test4" },
+                            "機關"
+                        ]
+                    }
+                },
+                {
+                    "type": "addTips",
+                    "data": {
+                        "deltaTime": 11,
+                        "time": 99999999,
+                        "opacity": 0.5,
+                        "text": [
+                            "/※觸發",
+                            { "type": "image", "id": "test4" },
+                            "/機關以繼續教學"
+                        ]
+                    }
+                },
+                {
+                    "type": "delay",
+                    "data": {
+                        "time": 2,
+                        "command": [{
+                                "type": "addPortal",
+                                "data": {
+                                    "type": 1,
+                                    "portal": [{
+                                        "pos": [3, 0, 0],
+                                        "side": "z",
+                                        "to": [7, 1, 1]
+                                    }, {
+                                        "pos": [7, 1, 0],
+                                        "side": "z",
+                                        "to": [3, 0, 1]
+                                    }]
+                                }
+                            },
+
+                            { "type": "deleteBlock", "data": { "id": "2-0-4" } },
+                            { "type": "deleteBlock", "data": { "id": "2-1-4" } },
+                            { "type": "deleteBlock", "data": { "id": "2-1-5" } },
+                            { "type": "deleteBlock", "data": { "id": "2-1-6" } },
+                            { "type": "deleteBlock", "data": { "id": "2-0-6" } },
+                            { "type": "deleteEntity", "data": { "id": "block2" } },
+                            { "type": "deleteEntity", "data": { "id": "test2" } },
+
+                            { "type": "setblock", "data": { "id": "log", "pos": [0, 0, 0] } },
+                            { "type": "setblock", "data": { "id": "log", "pos": [2, 0, 0] } },
+                            { "type": "setblock", "data": { "id": "log", "pos": [4, 0, 0] } },
+                            { "type": "setblock", "data": { "id": "log", "pos": [6, 0, 0] } },
+                            { "type": "setblock", "data": { "id": "log", "pos": [6, 1, 0] } },
+                            { "type": "setblock", "data": { "id": "log", "pos": [8, 1, 0] } },
+                            { "type": "setblock", "data": { "id": "log", "pos": [10, 0, 0] } },
+                            { "type": "setblock", "data": { "id": "log", "pos": [10, 1, 0] } },
+
+                            { "type": "setblock", "data": { "id": "brick1", "pos": [5, 0, 0] } },
+                            { "type": "setblock", "data": { "id": "brick1", "pos": [9, 1, 0] } },
+
+                            { "type": "setblock", "data": { "id": "stone1", "pos": [0, 1, 0] } },
+                            { "type": "setblock", "data": { "id": "stone1", "pos": [1, 1, 0] } },
+                            { "type": "setblock", "data": { "id": "stone1", "pos": [2, 1, 0] } },
+                            { "type": "setblock", "data": { "id": "stone1", "pos": [3, 1, 0] } },
+                            { "type": "setblock", "data": { "id": "stone1", "pos": [4, 1, 0] } },
+                            { "type": "setblock", "data": { "id": "stone1", "pos": [5, 1, 0] } },
+                            { "type": "setblock", "data": { "id": "stone1", "pos": [6, 2, 0] } },
+                            { "type": "setblock", "data": { "id": "stone1", "pos": [7, 2, 0] } },
+                            { "type": "setblock", "data": { "id": "stone1", "pos": [8, 2, 0] } },
+                            { "type": "setblock", "data": { "id": "stone1", "pos": [9, 2, 0] } },
+                            { "type": "setblock", "data": { "id": "stone1", "pos": [10, 2, 0] } },
+
+                            { "type": "setblock", "data": { "id": "stone0", "pos": [7, 0, 1] } },
+                            { "type": "setblock", "data": { "id": "stone0", "pos": [7, 0, 2] } },
+                            { "type": "setblock", "data": { "id": "stone0", "pos": [7, 0, 3] } },
+                            { "type": "setblock", "data": { "id": "stone0", "pos": [8, 0, 1] } },
+                            { "type": "setblock", "data": { "id": "stone0", "pos": [8, 0, 2] } },
+                            { "type": "setblock", "data": { "id": "stone0", "pos": [8, 0, 3] } },
+                            { "type": "setblock", "data": { "id": "stone0", "pos": [9, 0, 1] } },
+                            { "type": "setblock", "data": { "id": "stone0", "pos": [9, 0, 2] } },
+                            { "type": "setblock", "data": { "id": "stone0", "pos": [9, 0, 3] } },
+                            { "type": "setblock", "data": { "id": "stone0", "pos": [10, 0, 1] } },
+                            { "type": "setblock", "data": { "id": "stone0", "pos": [10, 0, 2] } },
+                            { "type": "setblock", "data": { "id": "stone0", "pos": [10, 0, 3] } },
+
+                            { "type": "tp", "data": { "id": 0, "pos": [3, 0, 3] } },
+                            {
+                                "type": "delay",
+                                "data": {
+                                    "time": 5,
+                                    "command": [{
+                                        "type": "set",
+                                        "data": {
+                                            "name": { "type": "string", "name": "runType" },
+                                            "value": { "type": "number", "name": 2 }
+                                        }
+                                    }, {
+                                        "type": "summon",
+                                        "data": {
+                                            "type": "block4",
+                                            "id": "block4",
+                                            "pos": [8, 2, 2],
+                                            "tag": {}
+                                        }
+                                    }, {
+                                        "type": "summon",
+                                        "data": {
+                                            "type": "test4",
+                                            "id": "test4",
+                                            "pos": [9, 0.5, 2],
+                                            "tag": { "noGravity": true, "noMovement": true, "push": false }
+                                        }
+                                    }]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "loop": false,
+            "type": "if",
+            "input": [
+                { "type": "entity", "name": ["tagData", "push"], "id": "test4" },
+                { "type": "comparison", "name": "=" },
+                { "type": "bool", "name": true }
+            ],
+            "command": [{
+                "type": "set",
+                "data": {
+                    "name": { "type": "string", "name": "runType" },
+                    "value": { "type": "number", "name": 0 }
+                }
+            }, {
+                "type": "setblock",
+                "data": {
+                    "id": "door1P",
+                    "pos": [1, 0, 0]
+                }
+            }, {
+                "type": "exitTips"
+            }, {
+                "type": "addTips",
+                "data": {
+                    "deltaTime": 1,
+                    "time": 1,
+                    "opacity": 0.5,
+                    "text": [
+                        "/※恭喜你完成了初級教學"
+                    ]
+                }
+            }, {
+                "type": "addTips",
+                "data": {
+                    "deltaTime": 3,
+                    "time": 1,
+                    "opacity": 0.5,
+                    "text": [
+                        "/※現在進入白色大門可以離開教學"
+                    ]
+                }
+            }]
+        },
+        {
+            "loop": true,
+            "type": "if",
+            "input": [
+                { "type": "variable", "name": "resetType" },
+                { "type": "comparison", "name": "=" },
+                { "type": "number", "name": 1 }
+            ],
+            "command": [{
+                "type": "summon",
+                "data": {
+                    "type": "block2",
+                    "id": "block2",
+                    "pos": [7, 3, 5],
+                    "tag": {}
+                }
+            }]
+        },
+        {
+            "loop": true,
+            "type": "if",
+            "input": [
+                { "type": "variable", "name": "resetType" },
+                { "type": "comparison", "name": "=" },
+                { "type": "number", "name": 2 }
+            ],
+            "command": [{
+                "type": "summon",
+                "data": {
+                    "type": "block4",
+                    "id": "block4",
+                    "pos": [8, 2, 2],
+                    "tag": {}
+                }
+            }]
+        },
+        {
+            "loop": true,
+            "type": "if",
+            "input": [
+                { "type": "variable", "name": "resetType" },
+                { "type": "comparison", "name": ">" },
+                { "type": "number", "name": 0 }
+            ],
+            "command": [{
+                "type": "set",
+                "data": {
+                    "name": { "type": "string", "name": "resetType" },
+                    "value": { "type": "number", "name": -1 }
+                }
+            }]
+        }
+    ]
+}

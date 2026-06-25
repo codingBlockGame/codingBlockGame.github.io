@@ -1,0 +1,48 @@
+{
+    "map": 0,
+    "bg": {
+        "x": "wood",
+        "y": "grass",
+        "z": "wood"
+    },
+    "player": {
+        "1": { "pos": [3, 0, 7] },
+        "2": { "pos": [7, 0, 3] }
+    },
+    "size": 5,
+    "tips": [{
+        "start": 1,
+        "end": 3,
+        "opacity": 0.5,
+        "text": [
+            "※歡迎來到雙人關卡1"
+        ]
+    }],
+    "portal": {},
+    "entity": [],
+    "blocks": [
+        { "id": "stone2", "pos": [0, 0, 0] },
+        { "id": "stone2", "pos": [1, 0, 1] },
+        { "id": "stone2", "pos": [2, 0, 2] },
+        { "id": "stone2", "pos": [3, 0, 3] },
+        { "id": "stone2", "pos": [4, 0, 4] },
+        { "id": "stone2", "pos": [5, 0, 5] },
+        { "id": "stone2", "pos": [6, 0, 6] },
+        { "id": "stone2", "pos": [7, 0, 7] },
+        { "id": "stone2", "pos": [8, 0, 8] },
+        { "id": "stone2", "pos": [9, 0, 9] },
+        { "id": "stone2", "pos": [10, 0, 10] },
+        { "id": "stone2", "pos": [0, 1, 0] },
+        { "id": "stone2", "pos": [1, 1, 1] },
+        { "id": "stone2", "pos": [2, 1, 2] },
+        { "id": "stone2", "pos": [3, 1, 3] },
+        { "id": "stone2", "pos": [4, 1, 4] },
+        { "id": "stone2", "pos": [5, 1, 5] },
+        { "id": "stone2", "pos": [6, 1, 6] },
+        { "id": "stone2", "pos": [7, 1, 7] },
+        { "id": "stone2", "pos": [8, 1, 8] },
+        { "id": "stone2", "pos": [9, 1, 9] },
+        { "id": "stone2", "pos": [10, 1, 10] }
+    ],
+    "functions": []
+}
